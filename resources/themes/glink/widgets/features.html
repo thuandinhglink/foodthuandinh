@@ -1,0 +1,14 @@
+<div class="container-fluid mt-5 pt-2">
+    <div class="row">
+    @foreach($widgetUseData as $value)
+        <div class="col-md-4">
+            <div class="py-5 rounded shadow" style="background: url({{$file_path}}{{$value['avatar']}}) top center;">
+                <div class="p-4">
+                    <h3>{{$value["name"]}}</h3>
+                    <a href="javascript:void(0)" class="btn btn-sm btn-soft-primary mt-2">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    @endforeach
+    </div><!--end row-->
+</div>

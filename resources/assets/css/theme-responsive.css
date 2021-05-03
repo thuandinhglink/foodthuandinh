@@ -1,0 +1,126 @@
+@media (max-width: 1500px){
+	#call-back:before{
+		width: 70%;
+	}
+}
+@media (max-width: 1200px){
+	#carouselExampleIndicators h3{
+		font-size: 40px;
+	}
+}
+@media (max-width: 1000px) {
+	#top-header{
+		text-align: center;
+	}
+	#top-header .t-left-side li{
+		margin-bottom: 15px;
+	}
+	.social-icons.ml-3{
+		margin-left: 0 !important;
+	}
+	.t-left-side,
+	.t-right-side{
+		float: none;
+		text-align: center;
+	}
+	.t-right-side{
+		margin-bottom: 1rem;
+	}
+	.social-icons,
+	.search-icon{
+		float: none;
+	}
+	#header .navbar{
+		padding: 20px 0px;
+	}
+	#header .nav-link{
+		padding: 15px 0px;
+	}
+	.img-bg{
+		margin-bottom: 3rem;
+	}
+	#who-we-are .yr-exp{
+		left: auto;
+		top: -110px;
+    	position: absolute;
+	}
+	#call-back:before{
+		width: 100%;
+	}
+	#sub-footer .sub-foot-left,
+	#sub-footer .sub-foot-right{
+		text-align: center;
+		margin: 5px 0px;
+	}
+	#top-header .t-left-side li:first-child:after{
+		display: block;
+	}
+	#counter{
+		text-align: center;
+	}
+}
+@media (max-width: 991px) {
+	#counter .counter-col:last-child:after{
+		display: block;
+	}
+	#get-solutions p.mb-0{
+		margin-bottom: 1rem !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (max-width: 960px){
+	#carouselExampleIndicators .carousel-caption{
+		width: 100%;
+	}
+}
+@media (max-width: 860px) {
+}	
+@media (max-width: 767px) {
+}
+@media (max-width: 700px) {
+	#expert-workers .owl-controls,
+	#customer-says .owl-controls{
+		position: relative;
+		text-align: center;
+		left: 0;
+		right: 0;
+	}
+	#expert-workers .owl-pagination .owl-page,
+	#customer-says .owl-pagination .owl-page{
+		display: inline-block;
+		margin-right: 5px;
+	}
+	#expert-workers .owl-pagination .owl-page span,
+	#customer-says .owl-pagination .owl-page span{
+		left: 0;
+	}
+	.time-bg{
+		font-size: 24px;
+	}
+}
+@media (max-width: 600px) {
+	.slider-content h1{
+		font-size: 34px;
+	}
+}
+@media (max-width: 500px) {
+}
+@media (max-width: 470px) {
+}
+@media (max-width: 400px) {
+	#call-back .call-back-phone{
+		font-size: 24px;
+	}
+	.time-bg{
+		font-size: 16px;
+	}
+	.pagination .page-link{
+		padding: 7px 12px;
+	}
+	#carouselExampleIndicators .carousel-caption{
+		top: 40%;
+	}
+}
+@media (max-width: 330px) {
+}

@@ -1,0 +1,138 @@
+<section class="bg-half bg-light d-table w-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="page-next-level">
+                    <h4 class="title"> {{$currentProductData["name"]}} </h4>
+                    <div class="page-next">
+                        <nav aria-label="breadcrumb" class="d-inline-block">
+                            <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                <li class="breadcrumb-item"><a href="index.html">Landrick</a></li>
+                                <li class="breadcrumb-item"><a href="index-shop.html">Shop</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div> <!--end container-->
+</section><!--end section-->
+<div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- Hero End -->
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="slider slider-for">
+                    @foreach($currentProductData["image"] as $value)
+                        <div><img src="{{$file_path}}{{$value['url']}}" class="img-fluid rounded" alt=""></div>
+                    @endforeach
+                </div>
+                <div class="slider slider-nav">
+                    @foreach($currentProductData["image"] as $value)
+                        <div><img src="{{$file_path}}{{$value['url']}}" class="img-fluid" alt=""></div>
+                    @endforeach
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-7 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="section-title ml-md-4">
+                    <h4 class="title">{{$currentProductData["name"]}}</h4>
+                    <h5 class="text-muted">$21.00 <del class="text-danger ml-2">$25.00</del> </h5>
+                    <ul class="list-unstyled text-warning h5 mb-0">
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                    </ul>
+                    
+                    <h5 class="mt-4 py-2">Overview :</h5>
+                    {!!$currentProductData["content"]!!}
+
+                    <div class="row mt-4 pt-2">
+                        @foreach($currentProductData["properties"] as $value)
+                        
+                            <div class="col-lg-6 col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0">{{$value["options_name"]}}:</h6>
+                                    <ul class="list-unstyled mb-0 ml-3">
+                                        @foreach($value["propertiesValue"] as $propertiesValue)
+                                            <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">{{$propertiesValue["name"]}}</a></li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div><!--end col-->
+                            
+                        @endforeach
+                        
+
+                        <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+                            <div class="d-flex shop-list align-items-center">
+                                <h6 class="mb-0">Quantity:</h6>
+                                <div class="ml-3">
+                                    <input type="button" value="-" class="minus btn btn-icon btn-soft-primary font-weight-bold">
+                                    <input type="text" step="1" min="1" name="quantity" value="1" title="Qty" class="btn btn-icon btn-soft-primary font-weight-bold">
+                                    <input type="button" value="+" class="plus btn btn-icon btn-soft-primary font-weight-bold">
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="mt-4 pt-2">
+                        <a href="javascript:void(0)" class="btn btn-primary">Shop Now</a>
+                        <a href="shop-cart.html" class="btn btn-soft-primary ml-2">Add to Cart</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row">
+            <div class="col-12">
+                <h5 class="mb-0">Related Products</h5>
+            </div><!--end col-->
+
+            <div class="col-12 mt-4">
+                <div id="client-four" class="owl-carousel owl-theme">
+                    @foreach($currentProductData["related"] as $value)
+                    <div class="card shop-list border-0 position-relative overflow-hidden m-2">
+                        <div class="shop-image position-relative overflow-hidden rounded shadow">
+                            <a href="{{$public_path}}{{$value['link']}}"><img src="{{$file_path}}{{$value['avatar']}}" class="img-fluid" alt=""></a>
+                            <a href="{{$public_path}}{{$value['link']}}" class="overlay-work">
+                                <img src="{{$file_path}}{{$value['avatar']}}" class="img-fluid" alt="">
+                            </a>
+                            <ul class="list-unstyled shop-icons">
+                                <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                <li class="mt-2"><a href="{{$public_path}}{{$value['link']}}" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                <li class="mt-2"><a href="{{$public_path}}{{$value['link']}}" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body content pt-4 p-2">
+                            <a href="shop-product-detail.html" class="text-dark product-name h6">{{$value["name"]}}</a>
+                            <div class="d-flex justify-content-between mt-1">
+                                <h6 class="text-muted small font-italic mb-0 mt-1">{{$currentProductData["price"]}}<del class="text-danger ml-2">{{$currentProductData["compare_price"]}}</del> </h6>
+                                <ul class="list-unstyled text-warning mb-0">
+                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section>

@@ -1,0 +1,25 @@
+{
+    "name": "vipspatel/widgetType",
+    "description": "",
+    "authors": [
+        {
+            "name": "Vips Patel",
+            "email": "info@chetsapp.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\WidgetType\\Providers\\WidgetTypeServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\WidgetType\\": ""
+        }
+    }
+}

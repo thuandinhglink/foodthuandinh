@@ -1,0 +1,25 @@
+{
+    "name": "vipspatel/categorys",
+    "description": "",
+    "authors": [
+        {
+            "name": "Vips Patel",
+            "email": "info@chetsapp.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Categorys\\Providers\\CategorysServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Categorys\\": ""
+        }
+    }
+}

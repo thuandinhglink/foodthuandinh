@@ -1,0 +1,25 @@
+{
+    "name": "vipspatel/webmenu",
+    "description": "",
+    "authors": [
+        {
+            "name": "Vips Patel",
+            "email": "info@chetsapp.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\WebMenu\\Providers\\WebMenuServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\WebMenu\\": ""
+        }
+    }
+}

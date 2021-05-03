@@ -1,0 +1,25 @@
+{
+    "name": "vipspatel/seo",
+    "description": "",
+    "authors": [
+        {
+            "name": "Vips Patel",
+            "email": "info@chetsapp.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Seo\\Providers\\SeoServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Seo\\": ""
+        }
+    }
+}

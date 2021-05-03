@@ -1,0 +1,25 @@
+{
+    "name": "vipspatel/template",
+    "description": "",
+    "authors": [
+        {
+            "name": "Vips Patel",
+            "email": "info@chetsapp.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Template\\Providers\\TemplateServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Template\\": ""
+        }
+    }
+}

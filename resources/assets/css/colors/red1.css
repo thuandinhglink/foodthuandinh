@@ -1,0 +1,109 @@
+/*==================
+	Author: Avisitz
+	Author URI: https://themeforest.net/user/denthemes
+	Description: AvisBizz - Corporate Business HTML5 Template
+==================*/
+
+/**=========================
+[Table of contents]
+
+1. COLORS
+2. BACKGROUND
+3. BORDER
+=========================**/
+
+/**=========================
+	START COLORS
+=========================**/
+.color-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary.disabled,
+.btn-primary:disabled,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle,
+.btn-light.focus,
+.btn-light:focus,
+#top-header .t-left-side i,
+.pagination .page-link,
+.social-icons a:hover i,
+#top-header .t-left-side i,
+#header .navbar-brand span,
+#header .nav-item.active a,
+#header .nav-item a:hover,
+#header .dropdown-active a,
+#breadcrumb li a,
+#what-we-offer .card:hover .mdi-bg,
+#what-we-offer .card a:hover,
+.filters-button-group .btn-link:hover,
+.filter-content a:hover,
+#latest-news .card h4 a:hover,
+#latest-news .new-post a:hover,
+#footer a:hover,
+#sub-footer a{
+	color: #de2121;
+}
+/**=========================
+	END COLORS
+=========================**/
+
+/**=========================
+	START BACKGROUND
+=========================**/
+::-webkit-scrollbar-thumb,
+::selection,
+.btn-primary,
+.btn-border:hover,
+.badge-primary,
+.dropdown-item.active,
+.dropdown-item:active,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link,
+#header .dropdown-menu .dropdown-item:hover,
+#header .dropdown.active .dropdown-menu .dropdown-item:hover,
+.owl-theme .owl-controls .owl-page span,
+#slider-carousel .owl-pagination .owl-page.active span,
+#customer-says .owl-pagination .owl-page.active span,
+#latest-news .owl-pagination .owl-page.active span,
+#expert-workers .owl-pagination .owl-page.active span,
+.mdi-bg,
+.head-after:before,
+.social-icons a,
+.bootstrap-select .dropdown-menu .selected.active:hover,
+#header .dropdown.active .dropdown-menu .dropdown-item.active,
+#header .navbar-toggler,
+.page-item.active .page-link{
+	background-color: #de2121;
+}
+/**=========================
+	END BACKGROUND
+=========================**/
+
+/**=========================
+	START BORDER
+=========================**/
+#header .nav-item.active a:before,
+#header .nav-item a:hover:before,
+#header .dropdown-active:before,
+.btn-primary,
+.btn-primary:hover,
+.badge-primary,
+.dropdown-item.active,
+.dropdown-item:active,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link,
+.btn-border,
+.form-control:focus,
+.form-control:active,
+.head-after:after,
+.side-nav-bar li a:hover,
+.side-nav-bar li.active a,
+.page-item.active .page-link{
+	border-color: #de2121;
+}
+/**=========================
+	END BORDER
+=========================**/

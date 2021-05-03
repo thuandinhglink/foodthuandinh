@@ -1,0 +1,41 @@
+<div id="navigation">
+	<ul class="navigation-menu">
+		@foreach($widgetUseData[0]['chidData'] as $value)
+			@if($value['type'] == 1)
+				<li class="has-submenu">
+		            <a href="javascript:void(0)">{{$value["name"]}}</a><span class="menu-arrow"></span>
+		            <ul class="submenu">
+		            	@foreach($value["chidData"] as $valueChid1)
+			            	@if($valueChid1['type'] == 1)
+			                	<li class="has-submenu"><a href="javascript:void(0)"> {{$valueChid1["name"]}}</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                    	@foreach($valueChid1["chidData"] as $valueChid2)
+			            					@if($valueChid2['type'] == 1)
+			            						<li class="has-submenu"><a href="javascript:void(0)"> {{$valueChid2["name"]}}</a><span class="submenu-arrow"></span>
+		            							<ul class="submenu">
+				            						@foreach($valueChid2["chidData"] as $valueChid3)
+				            							@if($valueChid3['type'] == 1)
+						            						<li><a href="javascript:void(0)"> {{$valueChid3["name"]}}</a></li>
+						            					@else
+						            						<li><a href="{{$valueChid3['link']}}"> {{$valueChid3["name"]}}</a></li>
+						            					@endif
+				            						@endforeach
+				            					</ul>
+			            					@else
+			            						<li><a href="{{$valueChid2['link']}}"> {{$valueChid2["name"]}}</a></li>
+			                				@endif
+		                				@endforeach
+                                    </ul> 
+                                </li>
+			                @else
+			                	<li><a href="{{$valueChid1['link']}}">{{$valueChid1["name"]}}</a></li>
+			                @endif
+		                @endforeach
+		            </ul>
+		        </li>
+			@else
+				<li><a href="{{$value['link']}}">{{$value["name"]}}</a></li>
+			@endif
+		@endforeach
+	</ul>
+</div>
